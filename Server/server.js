@@ -17,7 +17,12 @@ await connectDB();
 connectCloudinary();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173" || "https://lms-mpjx.onrender.com/";
+  ],
+  credentials: true;
+}));
 app.use(clerkMiddleware());
 
 // Routes
