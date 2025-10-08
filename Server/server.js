@@ -19,9 +19,9 @@ connectCloudinary();
 // Middleware
 app.use(cors({
   origin: [
-    "http://localhost:5173" || "https://lms-mpjx.onrender.com/";
+    "http://localhost:5173" || "https://lms-mpjx.onrender.com/"
   ],
-  credentials: true;
+  credentials: true
 }));
 app.use(clerkMiddleware());
 
